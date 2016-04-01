@@ -1,0 +1,21 @@
+<div layout-fill layout="column">
+    <md-toolbar class="l-topbar">
+        <div class="md-toolbar-tools">
+            <div ui-view="breadcrumbs"></div>
+            <div flex></div>
+            <div>{{ private.user.username }}</div>
+            <img ng-src="{{ private.user.gravatar }}" class="l-avatar">
+        </div>
+    </md-toolbar>
+    <div flex layout="row">
+        <nav class="l-menu">
+            <md-button ui-sref="private.new" ui-sref-active="md-primary md-raised">what's new?</md-button>
+            <md-button ui-sref="private.search" ui-sref-active="md-primary md-raised">search</md-button>
+            <md-button>my playlists</md-button>
+            <md-button class="md-warn" ng-href="/logout" target="_self">log out</md-button>
+        </nav>
+        <md-content flex ui-view="">
+
+        </md-content>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+md-content {
+    padding: 10px;
+}
+
+md-grid-list md-grid-tile md-grid-tile-header, md-grid-list md-grid-tile md-grid-tile-footer {
+    background-color: rgba(0, 0, 0, .7);
+}
